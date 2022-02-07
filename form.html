@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">GWcare</div>
+      <div class="nav_list_container">
+        <a href="index.html" class="home-nav-item">Home</a>
+        <a href="form.html" class="form-nav-item">Form</a>
+        <a href="about.html" class="about-nav-item">About</a>
+        <a href="contact.html" class="contact-nav-item">Contact</a>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h1>Form</h1>
+      <form
+        method="get"
+        action="index.html"
+        enctype="multipart/form-data"
+        class="form"
+      >
+        <div class="form-element">
+          <label class="label" for="name-input">Name</label>
+          <input
+            required
+            class="input"
+            id="name-input"
+            type="text"
+            placeholder="Name"
+            name="name"
+          />
+        </div>
+
+        <div class="form-element">
+          <label class="label" for="email-input"> email</label>
+          <input
+            class="input"
+            id="email-input"
+            type="email"
+            placeholder=" email"
+            name="email"
+          />
+        </div>
+
+        <div class="form-element">
+          <label class="label" for="age-input"> age</label>
+          <input
+            class="input"
+            id="age-input"
+            type="number"
+            placeholder=" age"
+            name="age"
+            min="1"
+            max="5"
+          />
+        </div>
+
+        <div class="form-element">
+          <label class="label" for="password-input"> password</label>
+          <input
+            required
+            class="input"
+            id="password-input"
+            type="password"
+            placeholder=" password"
+            name="password"
+          />
+        </div>
+
+        <div class="form-element">
+          <label class="label" for="tel-input">Contact no</label>
+          <input
+            class="input"
+            id="tel-input"
+            type="tel"
+            placeholder="8888888888"
+            name="tel"
+            pattern="[0-9]{4}[0-9]{3}[0-9]{3}"
+          />
+        </div>
+
+        <div class="form-element">
+          <h3>Gender</h3>
+          <div class="radio-container">
+            <input
+              class="    "
+              type="radio"
+              name="gender"
+              id="male"
+              value="male"
+            />
+            <label class="label" for="male">Male</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" name="gender" id="female" value="female" />
+            <label class="label" for="female">Female</label>
+          </div>
+          <div class="radio-container">
+            <input type="radio" name="gender" id="Other" value="others" />
+            <label class="label" for="Other">Other</label>
+          </div>
+          <div class="radio-container">
+            <input
+              type="radio"
+              name="gender"
+              id="Dont-want-to-reveal"
+              value="dontwattoreveal"
+            />
+            <label class="label" for="Dont-want-to-reveal"
+              >Dont want to reveal</label
+            >
+          </div>
+        </div>
+
+        <div class="form-element">
+          <h3>
+            Out of the following how many programming languages do you know
+          </h3>
+          <div class="checkbox-container">
+            <input type="checkbox" id="HTML" name="HTML" value="HTML" />
+            <label for="HTML">HTML</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="CSS" name="CSS" value="CSS" />
+            <label for="CSS"> CSS</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="JS" name="JS" value="JavaScript" />
+            <label for="JS">JavaScript</label>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="python" name="python" value="python" />
+            <label for="python">Python</label>
+          </div>
+        </div>
+
+        <div class="form-element">
+          <label class="label" for="favcolor">Select your favorite color</label>
+          <input type="color" id="favcolor" name="favcolor" />
+        </div>
+
+        <div class="form-element">
+          <label class="label" for="birthday">Birthday</label>
+          <input class="input" type="date" id="birthday" name="birthday" />
+        </div>
+
+        <div class="form-element">
+          <label class="label" for="myfile">Upload your aadhar card</label>
+          <input type="file" id="myfile" name="myfile" />
+        </div>
+
+        <div class="form-element">
+          <label class="label" for="points"
+            >How much did you like our website</label
+          >
+          <input
+            class="input"
+            type="range"
+            id="points"
+            name="points"
+            min="0"
+            max="10"
+          />
+        </div>
+
+        <button type="submit" class="form-button">Login</button>
+        <button type="reset" class="form-button">reset</button>
+      </form>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
